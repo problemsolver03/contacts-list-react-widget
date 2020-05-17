@@ -17,7 +17,7 @@ class App extends React.Component {
     formData.append("files", fileField.files[0]);
 
     this.setState({ loading: true });
-    fetch("http://localhost:3000/fileprocessing", {
+    fetch("https://contact-list-react-app.herokuapp.com/fileprocessing", {
       method: "POST",
       body: formData,
     })
